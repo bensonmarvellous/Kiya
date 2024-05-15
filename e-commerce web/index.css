@@ -1,0 +1,922 @@
+.sedan-sc-regular {
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Sedan SC", serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #eca7a7;
+    box-shadow: 5px 5px 5px rgb(173, 158, 158);
+    color: #1a1818;
+    padding: 0px 0;
+    width: 100%;
+  }
+  
+  header h1 {
+    margin: 20px;
+    font-family:  serif;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 50px;
+    margin-left: 50px;
+    line-height: 40px;
+  }
+  
+  nav ul li a {
+    color: #f7efef;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  /* Dropdown Button */
+  .dropdown {
+    position: relative;
+  }
+  
+.dropbtn {
+  color: rgb(240, 233, 233);
+  padding: 6px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  top: 25px;
+  min-width: 160px;
+  margin-bottom: 21px;
+  margin-left: 10%;
+  box-shadow: 0px 8px 16px 0px rgba(231, 230, 230, 0.2);
+  z-index: 1;
+}
+@media screen and (min-width: 1400px) {
+  .dropdown-content {
+    min-width: 160px; /* Adjust the width for larger screens */
+    top: 25px; /* Adjust the positioning */
+    margin-left: 100px;
+  }
+}
+@media screen and (min-width: 965px) {
+  .dropdown-content {
+    min-width: 160px; /* Adjust the width for larger screens */
+    top: 25px; /* Adjust the positioning */
+    margin-left: 100px;
+  }
+  nav ul li {
+    margin-left: 30px;
+  }
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(46, 46, 46);
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #e7d7d7; color: #221919; border-radius: 50px;}
+#icon{
+  float: right;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background: white;
+}
+i{
+  margin: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #f5f1f1;
+  font-weight: 700;
+}
+.search-container {
+  position: relative;
+}
+#search-bar {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: #c08ea7;
+  border-radius: 20px;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+  padding: 15px;
+  width: 0;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+#search-bar.active {
+  opacity: 1;
+  width: auto;
+}
+
+#search-icon {
+  cursor: pointer;
+}
+.search-container a {
+  display: inline-block; /* Display icons inline */
+  margin-left: 5px; /* Add margin between icons */
+}
+@media (max-width: 768px){
+ .search-container i{
+  padding: 0px;
+  margin: 0px;
+  margin-right: 15px;
+ } 
+ i{
+  font-size: 12px;
+ }
+}
+@media (max-width: 565px){
+   i{
+   padding: 5px;
+   font-size: 13px;
+}
+
+}
+#side-panel{
+  display: none; /* Hide the search input by default */
+}
+ 
+label #btn{
+  display: none;
+  margin: 25px;
+}
+label #cancel{
+  font-size: 30px;
+  display: none;
+}
+#check{
+   display: none;
+}
+@media (max-width: 975px){
+  nav ul li {
+    margin: 10px;
+    }
+  
+}
+@media (max-width: 768px) {
+  nav ul li a{
+    display: none;
+  }
+  label #btn{
+    display: block;
+    margin-right: 60px;
+   }
+   .nav-menu{
+    position: fixed;
+    width: 60%;
+    height: 80vh;
+    background: rgb(204, 131, 131);
+    top: 90px;
+    border-radius: 25px;
+    left: -100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  z-index: 1000;
+  transition: all .5s;
+ }
+ nav .nav-menu li a{
+     display: block;
+     margin: 5px 0;
+     margin-bottom: 40px;
+     font-size: 25px;
+     font-weight: 600;
+ }
+#check:checked ~ .nav-menu{
+  left: 0;
+  background: rgb(207, 132, 132);
+}
+#check:checked ~ label #btn{
+  display: none;
+}
+#check:checked ~ label #cancel{
+  display: block;
+}
+}
+  .hero {
+    background-image: url('bag-2.jpg');
+    background-size: cover;
+    background-position: center;
+    object-fit: contain;
+    color: #1f1c1c;
+    text-align: center;
+    padding: 100px 0;
+    height: 60vh;
+  }
+  .hero-content{
+    margin: 20px;
+    top: 70px;
+  }
+  .hero-content a{
+    text-decoration: none;
+  }
+  .break{
+    text-align: left;
+    margin-top: 10%;
+    font-family:  serif;
+     }
+  .top {
+    text-align: left;
+    
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #8a3535;
+  }
+  
+  .hero p {
+    font-size: 1.7rem;
+    color: #aa4545;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .btn {
+    background-color: #f181b9;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 75%;
+    margin-top: 15px;
+    border-radius: 15px;
+  }
+  
+  .btn:hover {
+    background-color: #db7dac;
+  }
+  #image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between images */
+    align-items: center;
+    justify-content: center;
+ 
+  }
+
+  .image-content {
+    position: relative;
+    width: 400px; /* Adjust image width */
+    margin: 20px;
+    margin-top: 40px;
+     }
+
+  .image-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.6;
+  }
+
+  .image-content h2 {
+    position: absolute;
+    bottom: 30%; /* Adjust the distance from the bottom */
+    left: 45%; /* Adjust the distance from the left */
+    margin: 0;
+     padding: 5px 10px;
+     }
+     .image-content h2:hover{
+      color: #f7f0f0;
+     }
+ #popular-products{
+  text-align: center;
+  text-shadow: 2px 2px 5px #585454;
+ }  
+ .container2 {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+}
+.mySlides img {
+  width: 400px;
+  margin: 5px;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 2500%; 
+  position: absolute;
+  animation: slideBackground 20s linear infinite; /* Adjust duration as needed */
+
+}
+/* Individual slides */
+.mySlides {
+  width: 100; /* Set width for each slide */
+  float: left;
+}
+/* Keyframes for sliding background */
+@keyframes slideBackground {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -200%; /* Adjust according to the number of slides */
+  }
+}
+#about{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+#about-content{
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+#about-content p{
+   text-align: left;
+   margin: 5px;
+   font-family:  serif;
+}
+
+#card img{
+  width: 250px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+#discount {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Distribute items horizontally */
+}
+
+#discount-content {
+  display: flex;
+  align-items: center; /* Center vertically */
+  align-items: center;
+  justify-content: center;
+}
+
+#discount-content img {
+  max-width: 550px; /* Ensure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 80px; /* Adjust the space between image and text */
+}
+
+#text {
+  text-align: left; /* Align text to the left */
+    }
+
+    #text p {
+      font-size: 24px; /* Adjust font size */
+      margin: 0; /* Remove default margin */
+      color: red;
+      font-size: 35px;
+    }
+
+    #text h5 {
+      font-size: 18px; /* Adjust font size */
+      margin: 5px 0; /* Adjust margin */
+    }
+
+    #text button {
+      padding: 10px 20px; /* Adjust button padding */
+      font-size: 16px; /* Adjust font size */
+      background-color: #f181b9; /* Change button color */
+      color: #fff; /* Change button text color */
+      border: none; /* Remove button border */
+      border-radius: 15px; /* Round button corners */
+      cursor: pointer; /* Change cursor on hover */
+    }
+    @media only screen and (max-width: 768px) {
+      .image-content img{
+        width: 300px;
+      }
+      .image-content {
+        position: relative;
+        width: 250px; /* Adjust image width */
+        margin: 20px;
+        margin-right: 60px;
+         }
+         #discount-content img{
+          width: 250px;
+          margin: 10px;
+         }
+         .btn{
+          margin-right: 50%;
+         }
+       }
+       #brands {
+        background-color: pink; /* Set background color to pink */
+        padding: 60px; 
+        margin-top: 20px;
+      }     
+  #brand-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+  
+  #brand-content p {
+        flex: 1 0 calc(33.33% - 20px); 
+        margin: 10px; 
+      }
+      @media only screen and (max-width: 768px) {
+        #brand-content p {
+          flex: 1 0 calc(33.33% - 20px); 
+          margin: 5px;
+          padding: 10px; 
+        }
+        #brands {
+          padding: 20px;
+        }
+      }
+      footer {
+        background-color: #f3e8e8;
+        color: #2e2a2a;
+        text-align: center;
+        padding: 10px 0;
+      }
+      .container h4{
+        margin: 30px;
+        color: #6b6a6a;
+      }
+    #container{
+      display: flex;
+      justify-content: space-around;
+    }  
+    .additional-links{
+      display: flex;
+      justify-content: center;
+    } 
+    ul{
+      list-style-type: none;
+    } 
+    ul li a{
+      text-decoration: none;
+      color: #2e2a2a;
+    }  
+    ul li{
+      margin-bottom: 20px;
+    }
+    ul li a:hover{
+      color: #8a3535;
+    }
+      .subscribe-form {
+        margin-top: 20px; /* Add space between quick links and subscribe form */
+      }
+      
+      .subscribe-form input[type="email"],
+      .subscribe-form button {
+        padding: 10px; /* Add padding to input and button */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Add rounded corners */
+        margin-right: 10px; /* Add space between input and button */
+      }
+      
+      .subscribe-form button {
+        background-color: #cc95ad; /* Background color of the button */
+        color: #fff; /* Text color of the button */
+        cursor: pointer; /* Change cursor to pointer on hover */
+      }
+      
+      .subscribe-form button:hover {
+        background-color: #d64581; /* Darker background color on hover */
+      }
+      #what{
+        text-align: center;
+      }
+      
+      .social-media-icons {
+        margin-top: 20px; /* Add space between subscribe form and social media icons */
+      }
+      
+      /* Add more styles for social media icons as needed */
+      
+      /*SHOOPPING CSS STYLING */
+      #orders img{
+        width: 200px;
+        margin-top: 100px;
+        margin-left: 20px;
+      } 
+      #orders h1{
+        margin-top: 8%;
+        text-align: center;
+        font-size: 40px;
+      }    
+    
+    /* Button for cancel order */
+    #cancel-order-btn {
+        padding: 10px 20px;
+        background-color: #e77e88;
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    
+    #cancel-order-btn:hover {
+        background-color: #ce414f;
+    }
+    
+    /* SHOPPING ICON STYLING*/
+    .main-content {
+      transition: margin-right 0.5s; /* Add transition for smooth animation */
+  }
+  .shopping-icon {
+      cursor: pointer;
+  }
+  
+  .page-content {
+      padding: 5px;
+  }
+  
+  .slide-out-page {
+      position: fixed;
+      top: 0;
+      right: -500px; /* Start position off the screen */
+      width: 450px;
+      height: 100%;
+      background-color: #fff;
+      padding: 20px;
+      transition: right 0.5s; /* Add transition for smooth animation */
+  }
+  
+  .slide-out-page.active {
+      right: 0; /* Slide in the page */
+  }
+  .cancel-section{
+   padding: 10px;
+  }
+  #cancel-button {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 0px; /* Adjust as needed */
+    padding: 0;
+    margin: 5px;
+    background-color: #f18bbe;
+    border: none;
+    width: 0 25px;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.shopping {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.shop {
+  display: flex;
+  flex-direction: column;
+}
+
+.bag {
+  position: relative;
+  margin-right: 20px;
+  flex-direction: column;
+}
+
+.bag img {
+  width: 200px;
+  height: 200px;
+  margin-left: -40px;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 125%;
+  height: 89%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+
+  
+}
+.bag:hover .overlay {
+  opacity: 1;
+}
+.text {
+  flex: 1;
+}
+.flex {
+  display: flex;
+  justify-content: space-between; /* Separate items */
+  }
+
+.flex-left {
+  text-align: left; /* Align items to the left */
+  font-weight: bold;
+  color: #110e0e;
+  font-size: 15px;
+ 
+}
+
+.flex-right {
+  text-align: right; /* Align items to the right */
+  font-weight: bold;
+  font-size: 15px;
+}  
+.text button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-right: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.text button:hover {
+  background-color: #0056b3;
+}
+@media only screen and (max-width: 768px){
+  .slide-out-page {
+    right: -500px; /* Start position off the screen */
+    width: 350px;
+  }
+  .bag img {
+    width: 150px;
+    height: 150px;
+    margin-left: -30px;
+  }
+  .flex-right{
+    margin-left: -30px;
+    } 
+} 
+#orders {
+  display: flex;
+  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-left: 20px;
+}   
+.come{
+  margin-top: 10%;
+  text-align: center;
+}
+.bill{
+  margin-right: 50%;
+  text-align: center;
+}
+#orders label{
+  font-size: 18px;
+}
+#firstname{
+  width: 100%;
+  color: #beb6b6;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.texts{
+  border: 2px solid rgb(125, 126, 125);
+  padding: 100px;
+  margin-bottom: 5%;
+}
+.flexs{
+  display: flex;
+  gap: 70px;
+  margin: 10px;
+}
+.pay{
+  margin-top: 10px;
+}
+#subscribe-newsletter{
+  margin: 10px;
+}
+.pay label{
+  font-weight: bold;
+}
+.place{
+  margin-top: 30px;
+  border: none;
+  background: blue;
+  width: 150px;
+  border-radius: 25px;
+  height: 40px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.place:hover{
+  background-color: #007bff;
+}
+@media only screen and (max-width: 768px){
+  .come{
+    margin-top: 30%;
+  }
+  #orders {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-left: 0px;
+  }   
+}
+
+
+   /*BAG PAGE CSS STYLING */
+   #bag{
+    margin-top: 5%;
+    text-align: center;
+    background-image: url('shop-4.jpg');
+    height: 100px;
+   }
+   #bag h3{
+    padding: 15px;
+    color: #1f1d1d;
+   }
+   #color{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+   }
+   div .blue{
+    width: 50px;
+    height: 45px;
+    background: #0056b3;
+   }
+   div .black{
+    width: 50px;
+    height: 45px;
+    background: #0a0a0a;
+   }
+   div .yellow{
+    width: 50px;
+    height: 45px;
+    background: #aca54d;
+   }
+   #divided {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  #divided-left {
+    flex-direction: row;
+    gap: 10px;
+    padding: 50px;
+    }
+  
+  #divided-right {
+    flex: 1; /* Let the right column take up remaining space */
+  }
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image {
+    flex-basis: calc(28.33% - 10px); /* Set the initial size for each item with some space between */
+    margin-bottom: 20px; /* Add space between rows */
+    margin: 10px;
+     }
+  
+  .image img {
+    width: 300px; /* Make the image fill its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .right{
+    float: right;
+    margin: -2%;
+    padding-left: 20%;
+    margin-right: 10%;
+  }
+  
+  @media (max-width: 768px) {
+    .image {
+      flex-basis: calc(50% - 10px); /* Set the initial size for each item with some space between on smaller screens */
+  
+      }
+      .right{
+        float: right;
+        margin: -9%;
+        margin-right: 2px;
+        padding-left: 2px;
+      }
+        
+  }
+   
+  
+  @media (max-width: 768px) {
+    #divided {
+      flex-direction: column; /* Stack the columns vertically on small screens */
+    }
+    
+    #divided-left,
+    #divided-right {
+      flex: 1; /* Let both columns take up full width on small screens */
+      padding-right: 0; /* Remove padding between columns */
+    }
+  }
+  
+ 
+
+   .pagination {
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .pagination ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .pagination li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .pagination li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .pagination li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+   @media only screen and (max-width: 768px){
+    #bag{
+      margin-top: 15%;
+    }
+    #bag h3{
+      padding: 25px;
+    }
+   }
+         /* ACCESSORIES CSS STYLING */
+         div .white{
+          width: 50px;
+          height: 45px;
+          background: #eff0f1;
+          box-shadow: 2px 2px 2px rgb(231, 220, 220);
+         }   
+         div .gold{
+          width: 50px;
+          height: 45px;
+          background: rgb(252, 224, 67);
+          box-shadow: 2px 2px 2px rgb(231, 220, 220);
+         }    
+         div .silver{
+          width: 50px;
+          height: 45px;
+          background: rgb(194, 194, 192);
+          box-shadow: 2px 2px 2px rgb(231, 220, 220);
+         }       

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiya</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="index.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+    <div class="container">
+        <h1>KIYA</h1>
+        <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Shop</a>
+          <div class="dropdown-content">
+            <a href="bag.html">Bags</a>
+            <a href="shoes.html">Shoes</a>
+            <a href="accessories.html">Accessories</a>
+          </div>
+        </li> 
+        <li><a href="about">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="search-container">
+        <i id="search-icon" class="fas fa-search"></i>
+        <input type="text" id="search-bar" class="hidden" placeholder="Search..."> 
+         <a href="#"><i class="fas fa-heart"></i>
+          <a href="#"><i class="fas fa-user"></i>
+            <a href="#" id="shopping-icon"><i class="fas fa-shopping-bag"><sup>3</sup></i></a> <!-- Added ID for shopping bag icon -->
+          </div>
+          <div class="page-content">
+        </div>
+    </div>
+    <div class="slide-out-page" id="slide-out-page">
+        <!-- Content for the slide-out page goes here -->
+        <button id="cancel-button"><i class="fas fa-times"></i>
+        </button> 
+        <div class="shopping">
+          <div class="shop">
+              <div class="bag">
+                  <img src="bag-1.jpg" alt="bag">
+                  <div class="overlay">
+                    <h3>FENDI</h3>
+                    <p>Size: Medium</p>
+                    <p>Color: Black</p>
+                    <p>Amount: $50</p>
+                </div>
+            </div>
+            <div class="bag">
+                <img src="bag-2.jpg" alt="bag">
+                <div class="overlay">
+                    <h3>LOUI VUITTON</h3>
+                    <p>Size: Large</p>
+                    <p>Color: White</p>
+                    <p>Amount: $60</p>
+                </div>
+            </div>
+            <div class="bag">
+                <img src="acccesories-1.jpg" alt="bag">
+                <div class="overlay">
+                    <h3>Gucci</h3>
+                    <p>Size: Small</p>
+                    <p>Color: Brown</p>
+                    <p>Amount: $40</p>
+                </div>
+                </div>
+        </div>
+        <div class="text">
+          <h1>Summary</h1>
+          <div class="flex">
+              <div class="flex-left">
+                  <p>SUBTOTAL:</p>
+                  <p>DELIVERY:</p>
+                  <p>DISCOUNT:</p>
+                  <p>TOTAL :</p>
+              </div>
+              <div class="flex-right">
+                  <p>$300.00</p>
+                  <p>FREE</p>
+                  <p>-10%</p>
+                  <p>$290.00</p>
+                  <a href="shopping.html" class="checkout-button">
+                    <button>Checkout</button>
+                </a>
+              </div>
+               </div>
+      </div>     
+    </div>
+    </div> 
+</div>
+</nav>
+</header> 
+    <section id="bag">
+        <h3>Shoes</h3>
+    </section>
+<section id="divided">
+    <div id="divided-left">
+        <h4>Categories</h4>
+        <p>Shoes</p>
+        <h6>Filter By</h6>
+        <p>PRICE</p>
+        <p>Range: $60.00 - $500.00</p>
+        <h6>Color</h6>
+        <div id="color">
+           <div class="blue"></div> 
+           <div class="black"></div>
+           <div class="yellow"></div>
+        </div>
+        <div class="brand">
+            <h5>BRANDS</h5>
+            <p>Kiya</p>
+            <p>Mango</p>
+            <p>River island</p>
+            <p>TopShop</p>
+            <p>Asos</p>
+        </div>
+    </div>
+        <div id="divided-right">
+            <p>60 PRODUCTS FOUND</p>
+            <P class="right">SORT BY: HIGHEST RATED</P>
+            <div class="image-grid">
+                 <div class="image">
+                  <img src="shoe-1.jpg" alt="Image 1">
+                </div>
+                <div class="image">
+                  <img src="shoe-2.jpg" alt="Image 2">
+                </div>
+                <div class="image">
+                  <img src="shoe-3.jpg" alt="Image 3">
+                </div>
+                <div class="image">
+                  <img src="shoe-4.jpg" alt="Image 4">
+                </div>
+                <div class="image">
+                  <img src="shoe-5.jpg" alt="Image 5">
+                </div>
+                <div class="image">
+                  <img src="shoe-6.jpg" alt="Image 6">
+                </div>
+                <div class="image">
+                  <img src="shoe-7.jpg" alt="Image 7">
+                </div>
+                <div class="image">
+                  <img src="shoe-8.jpg" alt="Image 8">
+                </div>
+                <div class="image">
+                  <img src="shoe-9.jpg" alt="Image 9">
+                </div>
+            </div>
+                <div class="pagination">
+                    <ul>
+                      <li><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                       <li><a href="#">...</a></li>
+                      <li><a href="#">60</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div id="container">
+        <h2>KIYA</h2>
+          <h4>shop</h4>
+          <h4>Blog</h4>
+          <h4>Contact</h4>
+        </div>
+        <div class="additional-links">
+          <ul>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shipping and Delivery</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+          <ul>
+              <li><a href="#">Payment Options</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="subscribe-form">
+        <h4>Subscribe</h4>
+        <form>
+          <input type="email" placeholder="Your Email">
+          <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <div class="social-media-icons">
+      <!-- Add social media icons here -->
+    </div>
+  </div>
+  <p>&copy; 2024 Kiya. All rights reserved.</p>
+</footer>
+
+  
+
+
+
+</body>
+<script src="index.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
